@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation Bar */
+#header {
+  margin: 0;
+}
+
+#logo {
+  margin-right: auto;
+}
+
+.navbarList {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 2rem;
+  font-weight: bold;
+}
+
+/* Hero Banner */
+
+.hero-banner {
+  background-image: url(../images/02-hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100px;
+  position: relative;
+}
+
+.subHeading {
+  color: white;
+  border: 1px solid black;
+  position: absolute;
+  bottom: 15px;
+  right: 60px;
+  background-color: black;
+  padding: 0px 5px;
+  text-align: center;
+}
+
+/* About Me Section */
+
+#about {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 10px;
+  margin: 20px;
+}
+
+#about > h2 {
+  border-right: 4px solid black;
+  text-align: right;
+  padding: 20px;
+}
+
+#about > p {
+  margin-left: 20px;
+}
+
+/* Work Section */
+
+#work {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 10px;
+  margin: 20px;
+  height: 740px;
+}
+
+#work > h2 {
+  border-right: 4px solid black;
+  text-align: right;
+  padding: 20px;
+}
+
+#work > p {
+  margin-left: 20px;
+}
+
+.projects {
+  display: grid;
+  height: 600px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+    "surf surf"
+    "ledWall calculator"
+    "pastel runBuddy"
+    ;
+}
+.surf {
+  grid-area: surf;
+  background-image: url(../images/02-portfolio-4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  margin: 20px;
+  border: 2px solid black;
+  display: flex;
+}
+
+h3 {
+  align-self: flex-end;
+  padding: 2px;
+  color: white;
+}
+
+.ledWall {
+  grid-area: ledWall;
+  background-image: url(../images/02-portfolio-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  margin: 20px;
+  border: 2px solid black;
+  display: flex;
+}
+.calculator {
+  grid-area: calculator;
+  background-image: url(../images/02-portfolio-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  margin: 20px;
+  border: 2px solid black;
+  display: flex;
+}
+.pastel {
+  grid-area: pastel;
+  background-image: url(../images/02-portfolio-3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  margin: 20px;
+  border: 2px solid black;
+  display: flex;
+}
+.runBuddy {
+  grid-area: runBuddy;
+  background-image: url(../images/02-run-buddy.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  margin: 20px;
+  border: 2px solid black;
+  display: flex;
+}
+
+.projects * {
+  background-color: black;
+}
+
+/* Contact Me Section */
+
+#contact {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  padding: 10px;
+  margin: 20px;
+}
+
+#contact > h2 {
+  border-right: 4px solid black;
+  text-align: right;
+  padding: 20px;
+}
+
+.contactDetails {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+  padding: 5rem;
+  list-style: none;
+  font-weight: bold;
+}
